@@ -17,7 +17,7 @@ class Ui_weather_form(object):
         weather_form.resize(368, 485)
         weather_form.setTabletTracking(True)
         weather_form.setFocusPolicy(QtCore.Qt.ClickFocus)
-        icon = QtGui.QIcon.fromTheme("images/icon.png")
+        icon = QtGui.QIcon.fromTheme("image/icon.png")
         weather_form.setWindowIcon(icon)
         weather_form.setWindowOpacity(1.0)
         weather_form.setLayoutDirection(QtCore.Qt.LeftToRight)
@@ -89,7 +89,7 @@ class Ui_weather_form(object):
         self.text_weather_in_city.setFont(font)
         self.text_weather_in_city.setStyleSheet("QLabel {\n"
 "    color: white;\n"
-"    background-color: rgba(255, 255, 255, 10);\n"
+"    background-color: rgba(255, 255, 255, 0);\n"
 "}\n"
 "")
         self.text_weather_in_city.setFrameShape(QtWidgets.QFrame.NoFrame)
@@ -107,7 +107,7 @@ class Ui_weather_form(object):
         self.text_temp.setFont(font)
         self.text_temp.setStyleSheet("QLabel {\n"
 "    color: white;\n"
-"    background-color: rgba(255, 255, 255, 10);\n"
+"    background-color: rgba(255, 255, 255, 0);\n"
 "}\n"
 "")
         self.text_temp.setFrameShape(QtWidgets.QFrame.NoFrame)
@@ -125,7 +125,7 @@ class Ui_weather_form(object):
         self.text_description.setFont(font)
         self.text_description.setStyleSheet("QLabel {\n"
 "    color: white;\n"
-"    background-color: rgba(255, 255, 255, 10);\n"
+"    background-color: rgba(255, 255, 255, 0);\n"
 "}\n"
 "")
         self.text_description.setFrameShape(QtWidgets.QFrame.NoFrame)
@@ -137,7 +137,7 @@ class Ui_weather_form(object):
         self.text_description.setObjectName("text_description")
         self.frame = QtWidgets.QFrame(weather_form)
         self.frame.setGeometry(QtCore.QRect(-440, -870, 981, 1391))
-        self.frame.setStyleSheet("background-image: url(:/newPrefix/back.jpg)")
+        self.frame.setStyleSheet("")
         self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame.setObjectName("frame")
@@ -156,7 +156,7 @@ class Ui_weather_form(object):
         self.text_temp_likes.setFont(font)
         self.text_temp_likes.setStyleSheet("QLabel {\n"
 "    color: white;\n"
-"    background-color: rgba(255, 255, 255, 10);\n"
+"    background-color: rgba(255, 255, 255, 0);\n"
 "}\n"
 "")
         self.text_temp_likes.setFrameShape(QtWidgets.QFrame.NoFrame)
@@ -174,7 +174,7 @@ class Ui_weather_form(object):
         self.text_speed_wind.setFont(font)
         self.text_speed_wind.setStyleSheet("QLabel {\n"
 "    color: white;\n"
-"    background-color: rgba(255, 255, 255, 10);\n"
+"    background-color: rgba(255, 255, 255, 0);\n"
 "}\n"
 "")
         self.text_speed_wind.setFrameShape(QtWidgets.QFrame.NoFrame)
@@ -192,7 +192,7 @@ class Ui_weather_form(object):
         self.text_pressure.setFont(font)
         self.text_pressure.setStyleSheet("QLabel {\n"
 "    color: white;\n"
-"    background-color: rgba(255, 255, 255, 10);\n"
+"    background-color: rgba(255, 255, 255, 0);\n"
 "}\n"
 "")
         self.text_pressure.setFrameShape(QtWidgets.QFrame.NoFrame)
@@ -210,7 +210,7 @@ class Ui_weather_form(object):
         self.text_humidity.setFont(font)
         self.text_humidity.setStyleSheet("QLabel {\n"
 "    color: white;\n"
-"    background-color: rgba(255, 255, 255, 10);\n"
+"    background-color: rgba(255, 255, 255, 0);\n"
 "}\n"
 "")
         self.text_humidity.setFrameShape(QtWidgets.QFrame.NoFrame)
@@ -242,6 +242,7 @@ class Ui_weather_form(object):
         self.text_speed_wind.setText(_translate("weather_form", "Скорость ветра 34 м/с"))
         self.text_pressure.setText(_translate("weather_form", "Атмосферное давление 749 мм рт. ст."))
         self.text_humidity.setText(_translate("weather_form", "Влажность 33 %"))
+
 
 if __name__ == "__main__":
     import sys

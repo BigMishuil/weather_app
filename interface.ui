@@ -20,7 +20,8 @@
    <string>WeatherInYourCity</string>
   </property>
   <property name="windowIcon">
-   <iconset theme="image/icon.png"/>
+   <iconset theme="image/icon.png">
+    <normaloff>.</normaloff>.</iconset>
   </property>
   <property name="windowOpacity">
    <double>1.000000000000000</double>
@@ -172,7 +173,7 @@ QPushButton:pressed {
    <property name="styleSheet">
     <string notr="true">QLabel {
 	color: white;
-	background-color: rgba(255, 255, 255, 10);
+	background-color: rgba(255, 255, 255, 0);
 }
 </string>
    </property>
@@ -216,7 +217,7 @@ QPushButton:pressed {
    <property name="styleSheet">
     <string notr="true">QLabel {
 	color: white;
-	background-color: rgba(255, 255, 255, 10);
+	background-color: rgba(255, 255, 255, 0);
 }
 </string>
    </property>
@@ -260,7 +261,7 @@ QPushButton:pressed {
    <property name="styleSheet">
     <string notr="true">QLabel {
 	color: white;
-	background-color: rgba(255, 255, 255, 10);
+	background-color: rgba(255, 255, 255, 0);
 }
 </string>
    </property>
@@ -296,7 +297,7 @@ QPushButton:pressed {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image: url(:/newPrefix/back.jpg)</string>
+    <string notr="true"/>
    </property>
    <property name="frameShape">
     <enum>QFrame::StyledPanel</enum>
@@ -341,7 +342,7 @@ border-radius: 30;</string>
      <property name="styleSheet">
       <string notr="true">QLabel {
 	color: white;
-	background-color: rgba(255, 255, 255, 10);
+	background-color: rgba(255, 255, 255, 0);
 }
 </string>
      </property>
@@ -385,7 +386,7 @@ border-radius: 30;</string>
      <property name="styleSheet">
       <string notr="true">QLabel {
 	color: white;
-	background-color: rgba(255, 255, 255, 10);
+	background-color: rgba(255, 255, 255, 0);
 }
 </string>
      </property>
@@ -429,7 +430,7 @@ border-radius: 30;</string>
      <property name="styleSheet">
       <string notr="true">QLabel {
 	color: white;
-	background-color: rgba(255, 255, 255, 10);
+	background-color: rgba(255, 255, 255, 0);
 }
 </string>
      </property>
@@ -473,7 +474,7 @@ border-radius: 30;</string>
      <property name="styleSheet">
       <string notr="true">QLabel {
 	color: white;
-	background-color: rgba(255, 255, 255, 10);
+	background-color: rgba(255, 255, 255, 0);
 }
 </string>
      </property>
@@ -508,8 +509,6 @@ border-radius: 30;</string>
   <zorder>text_temp</zorder>
   <zorder>text_description</zorder>
  </widget>
- <resources>
-  <include location="../../Pictures/image.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>
