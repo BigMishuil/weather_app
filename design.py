@@ -233,7 +233,7 @@ class Ui_weather_form(object):
     def retranslateUi(self, weather_form):
         _translate = QtCore.QCoreApplication.translate
         weather_form.setWindowTitle(_translate("weather_form", "WeatherInYourCity"))
-        self.inputCity.setPlaceholderText(_translate("weather_form", "Введите город"))
+        self.inputCity.setPlaceholderText(_translate("weather_form", "Введите город.."))
         self.buttonGet.setText(_translate("weather_form", "Получить"))
         self.text_weather_in_city.setText(_translate("weather_form", "Кемерово"))
         self.text_temp.setText(_translate("weather_form", "56° C"))
