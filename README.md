@@ -1,2 +1,7 @@
-# weather_app
-Weather app with GUI
+Приложение погоды с GUI.
+
+
+В config.py нужно вставить.
+
+`api_token` — API токен сервиса
+
