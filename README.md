@@ -10,5 +10,5 @@ $ pip install -r requirements.txt
 ```
 
 # Интерфейс приложения
-![software](images/interface.jpg)
+![software](images/interface.JPG)
 
