@@ -5,3 +5,9 @@
 
 `api_token` — API токен сервиса [OpenWeatherMap](https://openweathermap.org/current).
 
+```
+$ pip install -r requirements.txt
+```
+
+#Интерфейс приложения
+
