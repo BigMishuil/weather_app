@@ -1,7 +1,7 @@
 Приложение погоды с GUI.
 
 
-В config.py нужно вставить.
+Получение погоды происходит с помощью API [OpenWeatherMap](https://openweathermap.org/current).
 
 `api_token` — API токен сервиса
 
