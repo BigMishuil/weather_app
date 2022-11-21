@@ -75,21 +75,21 @@ class MainWindow(QtWidgets.QMainWindow, Ui_weather_form):
                     self.text_weather_in_city.show()
 
                 try:
-                    self.text_temp.setText(str(data["main"]["temp"]) + "° C")
+                    self.text_temp.setText((str(data["main"]["temp"]))[:-2] + "° C")
                 except KeyError:
                     self.text_temp.setText("--° C")
                 finally:
                     self.text_temp.show()
 
                 try:
-                    self.text_temp_likes.setText("По ощущениям " + str(data["main"]["feels_like"]) + "° C")
+                    self.text_temp_likes.setText("По ощущениям " + (str(data["main"]["feels_like"]))[:-3] + "° C")
                 except KeyError:
                     self.text_temp_likes.setText("По ощущениям --° C")
                 finally:
                     self.text_temp_likes.show()
 
                 try:
-                    self.text_description.setText(data["weather"][0]["description"])
+                    self.text_description.setText((data["weather"][0]["description"]).title())
                 except KeyError:
                     self.text_description.setText("------------")
                 finally:
@@ -111,7 +111,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_weather_form):
                     self.text_humidity.show()
 
                 try:
-                    self.text_speed_wind.setText("Скорость ветра " + str(data["wind"]["speed"]) + " м/с")
+                    self.text_speed_wind.setText("Скорость ветра " + (str(data["wind"]["speed"]))[:-3] + " м/с")
                 except KeyError:
                     self.text_speed_wind.setText("Скорость ветра --- м/с")
                 finally:
