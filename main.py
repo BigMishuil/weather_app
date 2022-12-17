@@ -1,3 +1,4 @@
+import os
 import sys
 import json
 import requests as req
@@ -5,8 +6,11 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import QSize
 from PyQt5.QtGui import QIcon, QImage, QPalette, QBrush
 from design import Ui_weather_form
-from config import api_token
+from dotenv import load_dotenv
 
+load_dotenv()
+
+api_token = os.getenv("api_token")
 
 
 class MainWindow(QtWidgets.QMainWindow, Ui_weather_form):
